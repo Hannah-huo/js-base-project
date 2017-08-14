@@ -19,7 +19,7 @@ describe("测试描述", function(){
             '3 bottles of beer on the wall, 3 bottles of beer.\n' +
             'Take one down and pass it around, 2 bottles of beer on the wall.\n';
         
-        expect(expect_string).to.equal(result);
+        expect(result).to.contains(expect_string);
     });
 
     it("两瓶输出", function(){
@@ -29,7 +29,7 @@ describe("测试描述", function(){
             '2 bottles of beer on the wall, 2 bottles of beer.\n' +
             'Take one down and pass it around, 1 bottle of beer on the wall.\n';
 
-        expect(expect_string).to.equal(result);
+        expect(result).to.contains(expect_string);
     });
 
     it("最后一瓶输出", function(){
@@ -39,7 +39,7 @@ describe("测试描述", function(){
             '1 bottle of beer on the wall, 1 bottle of beer.\n' +
             'Take one down and pass it around, no more bottles of beer on the wall.';
 
-        expect(expect_string).to.equal(result);
+        expect(result).to.contains(expect_string);
     });
 
     it("结束段落输出", function(){
